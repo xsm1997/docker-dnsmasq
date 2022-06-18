@@ -4,6 +4,10 @@
 
 Dnsmasq is a lightweight, easy to configure, DNS forwarder and DHCP server. It is designed to provide DNS and optionally, DHCP, to a small network. It can serve the names of local machines which are not in the global DNS. The DHCP server integrates with the DNS server and allows machines with DHCP-allocated addresses to appear in the DNS with names configured either in each host or in a central configuration file. Dnsmasq supports static and dynamic DHCP leases and BOOTP/TFTP for network booting of diskless machines.
 
+This fork add filter-aaaa to it.
+
+https://github.com/coolsnowwolf/lede/blob/master/package/network/services/dnsmasq/patches/911-dnsmasq-filter-aaaa%2Bhttps%2Bunknown.patch
+
 # Example in a docker-compose
 
 Here is a `docker-compose.yml` file that run a local dns server using this image. You can adapt it for your own needs as you wish.
